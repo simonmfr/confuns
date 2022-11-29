@@ -216,9 +216,8 @@ clrp_uc <- c("#800000FF", "#767676FF", "#FFA319FF", "#8A9045FF", "#155F83FF", "#
 #' @title Own palette
 #' @export
 clrp_own <- getOption("custom_palette_from_globalenv")
-#library(grDevices)
-#fun_color_range <- colorRampPalette(c("#781a24", "#f7f7f7"))   # Apply colorRampPalette
-#clrp_own <- fun_color_range(13)   
+library(grDevices)
+clrp_own <- colorRampPalette(c("#aa1325","#ee253b","#ff7078","#ffa6aa","#ffd4d6","#fff2f3"))(13)
 
 n_colors <-
   list(
