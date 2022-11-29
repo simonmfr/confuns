@@ -1,5 +1,4 @@
 
-
 #' @title Create sub cluster colors
 #'
 #' @description Creates a vector of colors based on sub grouping.
@@ -178,7 +177,7 @@ diverging <-
 #' }
 #'
 #' @export
-colorpalettes <- c("milo", "jco", "npg", "aaas", "nejm", "lo", "jama", "uc")
+colorpalettes <- c("milo", "jco", "npg", "aaas", "nejm", "lo", "jama", "uc", "own")
 
 
 #' @title MILO Research Group - color palette
@@ -214,6 +213,11 @@ clrp_jama <- c("#374E55FF", "#DF8F44FF", "#00A1D5FF", "#B24745FF", "#79AF97FF", 
 #' @export
 clrp_uc <- c("#800000FF", "#767676FF", "#FFA319FF", "#8A9045FF", "#155F83FF", "#C16622FF", "#8F3931FF", "#58593FFF", "#350E20FF", "#1F77B4FF")
 
+#' @title Own - Christina
+#' @export
+library(grDevices)
+fun_color_range <- colorRampPalette(c("#5f000b", "#f7f7f7"))   # Apply colorRampPalette
+clrp_own <- fun_color_range(15)   
 
 n_colors <-
   list(
@@ -225,6 +229,7 @@ n_colors <-
     lo = length(clrp_lo),
     jama = length(clrp_jama),
     uc = length(clrp_uc),
+    own = length(clrp_own),
     Accent = 8,
     Dark2 = 8,
     Paired = 12,
@@ -386,4 +391,3 @@ all_color_spectra_vec <- function(){
     base::sort()
 
 }
-
