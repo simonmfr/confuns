@@ -38,7 +38,8 @@ pretty_colorpanels_list <-
 pretty_colorpalettes_list <-
   list(
     Journals = pretty_journals_clrp_vector,
-    Milo = c("milo","own"),
+    Milo = "milo",
+    Own = "own",
     ggplot2 = pretty_ggplot2_clrp_vector,
     `Viridis Options` = viridis_options,
     `RColor_brewer Options` = RColorBrewer_options
