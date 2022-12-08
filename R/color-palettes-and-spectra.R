@@ -232,6 +232,7 @@ n_colors <-
     own = length(clrp_own),
     Accent = 8,
     Dark2 = 8,
+    Greys = 9,
     Paired = 12,
     Pastel1 = 9,
     Pastel2 = 8,
@@ -276,7 +277,7 @@ color_vector <- function(clrp, names = NULL, clrp.adjust = NULL, n.colors = NA){
 
   } else if(base::is.na(n.colors) | !base::is.numeric(n.colors)){
 
-    if(clrp %in% c("default", "greyscale", viridis_options)){
+    if(clrp %in% c("default", viridis_options)){
 
       stop("If `clrp` among 'default' or viridis options, please specify either `names` or `n.colors`.")
 
