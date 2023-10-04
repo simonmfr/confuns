@@ -178,13 +178,17 @@ diverging <-
 #' }
 #'
 #' @export
-colorpalettes <- c("milo", "jco", "npg", "aaas", "nejm", "lo", "jama", "uc", "sifre")
+colorpalettes <- c("milo", "jco", "npg", "aaas", "nejm", "lo", "jama", "uc", "sifre", "milo2")
 
 
 #' @title MILO Research Group - color palette
 #' @export
 clrp_milo <- c("#C4432A", "#3A389C", "#478C3D", "#FFD700", "steelblue", "#FFA500", "#800000FF", "#64DB74",  "#8B2252", "#56D9ED", "#C934BD",
                  "#C9B972", "#4F1211", "#CD4F39", "#00868B", "#8B7355", "#CAFF70", "#2C6CA3", "#525252", "brown")
+
+#' @title MILO Research Group - color palette 2
+#' @export
+clrp_milo2 <- rep(clrp_milo, 5)
 
 #' @title Journal of Oncology - color palette
 #' @export
@@ -214,7 +218,7 @@ clrp_jama <- c("#374E55FF", "#DF8F44FF", "#00A1D5FF", "#B24745FF", "#79AF97FF", 
 #' @export
 clrp_uc <- c("#800000FF", "#767676FF", "#FFA319FF", "#8A9045FF", "#155F83FF", "#C16622FF", "#8F3931FF", "#58593FFF", "#350E20FF", "#1F77B4FF")
 
-#' @title Simon Frerichs - color palette
+#' @title Simon Frerich - color palette
 #' @export
 clrp_sifre <- c("#F44336","#FF8AC4","#9C27B0","#673AB7","#3F51B5","#03A9f4","#89CFF0","#009688", "#228B22BF", "#8BC34A","#CDDC39","#FFEB3B","#FFC107","#FF9800")
 
@@ -237,7 +241,8 @@ n_colors <-
     Pastel2 = 8,
     Set1 = 9,
     Set2 = 8,
-    Set3 = 12
+    Set3 = 12,
+    milo2 = length(clrp_milo2)
   )
 
 #' @title Get vector of colors
