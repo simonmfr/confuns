@@ -188,7 +188,8 @@ clrp_milo <- c("#C4432A", "#3A389C", "#478C3D", "#FFD700", "steelblue", "#FFA500
 
 #' @title MILO Research Group - color palette 2
 #' @export
-clrp_milo2 <- rep(clrp_milo, 5)
+clrp_milo2 <- rep(c("#C4432A", "#3A389C", "#478C3D", "#FFD700", "steelblue", "#FFA500", "#800000FF", "#64DB74",  "#8B2252", "#56D9ED", "#C934BD",
+                    "#C9B972", "#4F1211", "#CD4F39", "#00868B", "#8B7355", "#CAFF70", "#2C6CA3", "#525252"), 5)
 
 #' @title Journal of Oncology - color palette
 #' @export
